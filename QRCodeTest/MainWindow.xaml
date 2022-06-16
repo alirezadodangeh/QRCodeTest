@@ -1,0 +1,18 @@
+﻿<Window x:Class="QRCodeTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QRCodeTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="336" Width="347">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="ایجاد بارکد" HorizontalAlignment="Left" Margin="268,41,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Image x:Name="qrImage"  HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Height="136" RenderTransformOrigin="0.5,0.5" Width="179" Margin="26,125,0,0"/>
+        <TextBox  x:Name="txt"  AcceptsReturn="True" HorizontalAlignment="Left" Margin="10,24,0,0" TextWrapping="Wrap" Text="0919186594" VerticalAlignment="Top" Width="239" Height="63"/>
+
+    </Grid>
+</Window>
